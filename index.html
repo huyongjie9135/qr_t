@@ -1,57 +1,103 @@
-<!-- h5-demo/index.html -->
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>H5 页面展示</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>艾草的一生</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       margin: 0;
-      background-color: #f8f8f8;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
       padding: 20px;
     }
-    .card {
-      max-width: 480px;
+    .container {
+      max-width: 720px;
       margin: auto;
       background: #fff;
       border-radius: 12px;
       padding: 24px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      text-align: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
+    h1 {
+      font-size: 24px;
+      color: #2e7d32;
+      margin-bottom: 12px;
     }
-    .card h1 {
-      font-size: 22px;
-      margin-top: 20px;
+    h2 {
+      color: #388e3c;
+      font-size: 20px;
+      margin-top: 24px;
     }
-    .card p {
-      color: #555;
-    }
-    .card button {
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 6px;
+    p {
       font-size: 16px;
-      margin-top: 20px;
+      line-height: 1.7;
     }
-    .card button:hover {
-      background-color: #0056b3;
+    .emoji {
+      font-size: 18px;
+      margin-right: 6px;
+    }
+    .section {
+      margin-top: 28px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="assets/image.jpg" alt="示例图">
-    <h1>欢迎来到我的H5页面</h1>
-    <p>这是一个用 HTML5 编写的响应式页面，可扫码打开。</p>
-    <button onclick="alert('你点击了按钮！')">点击我</button>
+  <div class="container">
+    <h1>🌿艾草的一生，从春风到端午的清香</h1>
+    <p>艾草，不仅是中医里的驱寒良药、艾灸主角，更是中国人记忆里“端午香气”的象征。可你知道吗？这束门前悬挂的艾草，要经历怎样的一年？</p>
+    <p>让我们一起走进艾草的一生👇</p>
+
+    <div class="section">
+      <h2>📌【第一阶段：选地与整地】</h2>
+      <p><strong>时间：</strong>春季（2-4月）</p>
+      <p><strong>环境：</strong>阳光充足，排水良好，适合丘陵、田埂边、梯田角落</p>
+      <p><strong>整地方法：</strong>翻土20~30厘米，施足底肥，松软疏松</p>
+      <p><strong>🔍小贴士：</strong>晒地除虫，疏松土壤，为艾根稳扎基础。</p>
+    </div>
+
+    <div class="section">
+      <h2>🌱【第二阶段：繁殖与种植】</h2>
+      <p><strong>方法：</strong>采用根茎繁殖，挑选健康艾根（5~10cm）</p>
+      <p><strong>种植方式：</strong>穴栽法，每穴放2~3根，覆土2~3cm</p>
+      <p><strong>栽种密度：</strong>株距30cm，行距40cm</p>
+      <p><strong>📌经验口诀：</strong>“铺得匀、盖得松，发芽快、长得壮。”</p>
+    </div>
+
+    <div class="section">
+      <h2>🌿【第三阶段：管理与成长】</h2>
+      <p><strong>管理周期：</strong>从发芽到端午前（3~6月）</p>
+      <p><strong>水肥管理：</strong>间断浇水，干湿适中，追施尿素或草木灰</p>
+      <p><strong>除草松土：</strong>前期勤除草，中期控水控草提药效</p>
+      <p><strong>📌观察：</strong>5月起艾草长势明显，枝繁叶茂，香味逐渐增强。</p>
+    </div>
+
+    <div class="section">
+      <h2>✂️【第四阶段：采收与晾晒】</h2>
+      <p><strong>采收时间：</strong>端午前后最佳（5月下旬至6月上旬）</p>
+      <p><strong>采割方式：</strong>晴天上午，露水干后人工剪割</p>
+      <p><strong>晾晒要求：</strong>阴凉通风处摊晾3~5天，切忌暴晒</p>
+      <p><strong>✅收割后可用于：</strong></p>
+      <ul>
+        <li>艾条、艾柱（用于艾灸）</li>
+        <li>艾绒（制香驱蚊）</li>
+        <li>艾叶泡脚、制茶</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      🍃一个结尾，却是万家艾香的开始<br>
+      从一根小小的根茎，到清香飘满巷口的艾束，艾草见证了季节更替，也承载着中华文化的草本智慧。<br>
+      如今的你，如果在春天种下它，不出几月，也许门前就会飘出属于你自己的那一缕艾香。
+    </div>
   </div>
 </body>
 </html>
