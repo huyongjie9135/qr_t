@@ -56,8 +56,7 @@
       padding: 12px;
       border-bottom: 1px solid #e0e0e0;
     }
-    .video button{
-      
+    .video button {
       background-color: #007BFF;
       color: white;
       border: none;
@@ -65,20 +64,59 @@
       border-radius: 6px;
       font-size: 16px;
       margin-top: 20px;
+      cursor: pointer;
     }
     .video button:hover {
       background-color: #0056b3;
+    }
+
+    /* 自定义弹窗样式 */
+    .custom-alert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 9999;
+      font-size: 18px;
+      color: #333;
+    }
+    .custom-alert button {
+      margin-top: 20px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .custom-alert button:hover {
+      background-color: #2e7d32;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      display: none;
+      z-index: 9998;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    
     <h1>🌿艾草的一生，从春风到端午的清香</h1>
     <p>艾草，不仅是中医里的驱寒良药、艾灸主角，更是中国人记忆里“端午香气”的象征。可你知道吗？这束门前悬挂的艾草，要经历怎样的一年？</p>
     <p>让我们一起走进艾草的一生👇</p>
     <img src="assets/rensaicao1.jpg" alt="示例图">
     <img src="assets/rensaicao2.jpg" alt="示例图">
+
     <div class="section">
       <h2>📌【第一阶段：选地与整地】</h2>
       <p><strong>时间：</strong>春季（2-4月）</p>
@@ -121,9 +159,28 @@
       从一根小小的根茎，到清香飘满巷口的艾束，艾草见证了季节更替，也承载着中华文化的草本智慧。<br>
       如今的你，如果在春天种下它，不出几月，也许门前就会飘出属于你自己的那一缕艾香。
     </div>
+
     <div class="video">
-        <button onclick="alert('别点我！')">点击我</button>
+      <button onclick="showAlert()">点击我</button>
     </div>
   </div>
+
+  <!-- 自定义弹窗 -->
+  <div class="overlay" id="overlay" onclick="closeAlert()"></div>
+  <div class="custom-alert" id="customAlert">
+    别点我！
+    <br><button onclick="closeAlert()">知道了</button>
+  </div>
+
+  <script>
+    function showAlert() {
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("customAlert").style.display = "block";
+    }
+    function closeAlert() {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("customAlert").style.display = "none";
+    }
+  </script>
 </body>
 </html>
