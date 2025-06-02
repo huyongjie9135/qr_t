@@ -20,8 +20,13 @@
       padding: 24px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
     h1 {
       font-size: 24px;
+      text-align: center;
       color: #2e7d32;
       margin-bottom: 12px;
     }
@@ -47,15 +52,33 @@
       margin-top: 40px;
       font-style: italic;
       color: #666;
+      border-top: 1px solid #e0e0e0;
+      padding: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .video button{
+      
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .video button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    
     <h1>🌿艾草的一生，从春风到端午的清香</h1>
     <p>艾草，不仅是中医里的驱寒良药、艾灸主角，更是中国人记忆里“端午香气”的象征。可你知道吗？这束门前悬挂的艾草，要经历怎样的一年？</p>
     <p>让我们一起走进艾草的一生👇</p>
-
+    <img src="assets/认识艾草1.jpg" alt="示例图">
+    <img src="assets/认识艾草2.jpg" alt="示例图">
     <div class="section">
       <h2>📌【第一阶段：选地与整地】</h2>
       <p><strong>时间：</strong>春季（2-4月）</p>
@@ -97,6 +120,9 @@
       🍃一个结尾，却是万家艾香的开始<br>
       从一根小小的根茎，到清香飘满巷口的艾束，艾草见证了季节更替，也承载着中华文化的草本智慧。<br>
       如今的你，如果在春天种下它，不出几月，也许门前就会飘出属于你自己的那一缕艾香。
+    </div>
+    <div class="video">
+        <button onclick="alert('你点击了按钮！')">点击我</button>
     </div>
   </div>
 </body>
