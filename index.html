@@ -1,19 +1,57 @@
+<!-- h5-demo/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>二维码内容展示</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H5 页面展示</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
-    img { max-width: 200px; margin: 20px; }
-    button { padding: 10px 20px; font-size: 16px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+    .card {
+      max-width: 480px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .card h1 {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+    .card p {
+      color: #555;
+    }
+    .card button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .card button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
-  <h1>欢迎扫码访问！</h1>
-  <p>这是一段描述内容，支持文字展示。</p>
-  <img src="https://example.com/image.jpg" alt="示例图片">
-  <br>
-  <button onclick="alert('你点击了按钮！')">点我试试</button>
+  <div class="card">
+    <img src="assets/image.jpg" alt="示例图">
+    <h1>欢迎来到我的H5页面</h1>
+    <p>这是一个用 HTML5 编写的响应式页面，可扫码打开。</p>
+    <button onclick="alert('你点击了按钮！')">点击我</button>
+  </div>
 </body>
 </html>
